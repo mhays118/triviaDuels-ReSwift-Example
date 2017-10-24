@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F59744FFD669499ACDE9A4C /* Pods_TriviaDuels_ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C3FAAB9F32D21779554C0D /* Pods_TriviaDuels_ReSwift.framework */; };
+		9FD1D9134DD7996D68C941B2 /* Pods_TriviaDuels_ReSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7D44884E687F3EE588662D /* Pods_TriviaDuels_ReSwiftUITests.framework */; };
+		AB595178BC466104C9993018 /* Pods_TriviaDuels_ReSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCAC404EA969A17065C4DF5 /* Pods_TriviaDuels_ReSwiftTests.framework */; };
+		B77AAE0F1EEB930400C4D804 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AAE0E1EEB930400C4D804 /* NavigationController.swift */; };
+		B77AAE111EEB930B00C4D804 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AAE101EEB930B00C4D804 /* Routes.swift */; };
+		B77AAE131EEB931800C4D804 /* MainViewRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AAE121EEB931800C4D804 /* MainViewRoutable.swift */; };
+		B77AAE171EEB961400C4D804 /* TriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AAE161EEB961400C4D804 /* TriviaController.swift */; };
+		B77AAE191EEDAC7100C4D804 /* TriviaAnswerOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AAE181EEDAC7100C4D804 /* TriviaAnswerOptionsView.swift */; };
+		B7C854AA1EE8B3D2000ADBC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854A91EE8B3D2000ADBC3 /* AppDelegate.swift */; };
+		B7C854B11EE8B3D2000ADBC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C854B01EE8B3D2000ADBC3 /* Assets.xcassets */; };
+		B7C854B41EE8B3D2000ADBC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C854B21EE8B3D2000ADBC3 /* LaunchScreen.storyboard */; };
+		B7C854BF1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854BE1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftTests.swift */; };
+		B7C854CA1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854C91EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftUITests.swift */; };
+		B7C854D91EE8B48D000ADBC3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854D81EE8B48D000ADBC3 /* Player.swift */; };
+		B7C854DD1EE8B51F000ADBC3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854DC1EE8B51F000ADBC3 /* Question.swift */; };
+		B7C854E41EE8B5AA000ADBC3 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854E31EE8B5AA000ADBC3 /* APIResult.swift */; };
+		B7C854E61EE8B5AF000ADBC3 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854E51EE8B5AF000ADBC3 /* Requestable.swift */; };
+		B7C854EA1EE8B5B8000ADBC3 /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854E91EE8B5B8000ADBC3 /* RequestStatus.swift */; };
+		B7C854EE1EE8B5E6000ADBC3 /* TriviaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854ED1EE8B5E6000ADBC3 /* TriviaService.swift */; };
+		B7C854F01EE8B60C000ADBC3 /* TriviaRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854EF1EE8B60C000ADBC3 /* TriviaRequestable.swift */; };
+		B7C854F31EE8B73E000ADBC3 /* GetChallengersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854F21EE8B73E000ADBC3 /* GetChallengersRequest.swift */; };
+		B7C854F51EE8B777000ADBC3 /* GetTriviaQuestionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854F41EE8B777000ADBC3 /* GetTriviaQuestionsRequest.swift */; };
+		B7C854F71EE8B7FE000ADBC3 /* TriviaServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854F61EE8B7FE000ADBC3 /* TriviaServiceError.swift */; };
+		B7C854FA1EE8C445000ADBC3 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854F91EE8C445000ADBC3 /* HomeController.swift */; };
+		B7C854FD1EE8C8F4000ADBC3 /* ChallengerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854FC1EE8C8F4000ADBC3 /* ChallengerTableView.swift */; };
+		B7C855001EE8CB9E000ADBC3 /* UIView+PKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C854FF1EE8CB9E000ADBC3 /* UIView+PKI.swift */; };
+		B7D748E41EF3118800F43A53 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D748E31EF3118800F43A53 /* Action.swift */; };
+		B7D748E61EF3126700F43A53 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D748E51EF3126700F43A53 /* AppState.swift */; };
+		B7D748E81EF312F700F43A53 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D748E71EF312F700F43A53 /* AppReducer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7C854BB1EE8B3D2000ADBC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7C8549E1EE8B3D2000ADBC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7C854A51EE8B3D2000ADBC3;
+			remoteInfo = "TriviaDuels-ReSwift";
+		};
+		B7C854C61EE8B3D3000ADBC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7C8549E1EE8B3D2000ADBC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7C854A51EE8B3D2000ADBC3;
+			remoteInfo = "TriviaDuels-ReSwift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A2824C04F4A84114007CAC7 /* Pods-TriviaDuels-ReSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwiftTests/Pods-TriviaDuels-ReSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		20567BADBB98978D70DE7AAE /* Pods-TriviaDuels-ReSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwift/Pods-TriviaDuels-ReSwift.release.xcconfig"; sourceTree = "<group>"; };
+		2DCAC404EA969A17065C4DF5 /* Pods_TriviaDuels_ReSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriviaDuels_ReSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB356E5F8A890237CD3A1F30 /* Pods-TriviaDuels-ReSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwift/Pods-TriviaDuels-ReSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B5C3FAAB9F32D21779554C0D /* Pods_TriviaDuels_ReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriviaDuels_ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77AAE0E1EEB930400C4D804 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		B77AAE101EEB930B00C4D804 /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		B77AAE121EEB931800C4D804 /* MainViewRoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewRoutable.swift; sourceTree = "<group>"; };
+		B77AAE161EEB961400C4D804 /* TriviaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaController.swift; sourceTree = "<group>"; };
+		B77AAE181EEDAC7100C4D804 /* TriviaAnswerOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaAnswerOptionsView.swift; sourceTree = "<group>"; };
+		B7C854A61EE8B3D2000ADBC3 /* TriviaDuels-ReSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TriviaDuels-ReSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C854A91EE8B3D2000ADBC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7C854B01EE8B3D2000ADBC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7C854B31EE8B3D2000ADBC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7C854B51EE8B3D2000ADBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C854BA1EE8B3D2000ADBC3 /* TriviaDuels-ReSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TriviaDuels-ReSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C854BE1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaDuels_ReSwiftTests.swift; sourceTree = "<group>"; };
+		B7C854C01EE8B3D3000ADBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C854C51EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TriviaDuels-ReSwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C854C91EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaDuels_ReSwiftUITests.swift; sourceTree = "<group>"; };
+		B7C854CB1EE8B3D3000ADBC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C854D81EE8B48D000ADBC3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B7C854DC1EE8B51F000ADBC3 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B7C854E31EE8B5AA000ADBC3 /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		B7C854E51EE8B5AF000ADBC3 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		B7C854E91EE8B5B8000ADBC3 /* RequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
+		B7C854ED1EE8B5E6000ADBC3 /* TriviaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaService.swift; sourceTree = "<group>"; };
+		B7C854EF1EE8B60C000ADBC3 /* TriviaRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaRequestable.swift; sourceTree = "<group>"; };
+		B7C854F21EE8B73E000ADBC3 /* GetChallengersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChallengersRequest.swift; sourceTree = "<group>"; };
+		B7C854F41EE8B777000ADBC3 /* GetTriviaQuestionsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTriviaQuestionsRequest.swift; sourceTree = "<group>"; };
+		B7C854F61EE8B7FE000ADBC3 /* TriviaServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaServiceError.swift; sourceTree = "<group>"; };
+		B7C854F91EE8C445000ADBC3 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B7C854FC1EE8C8F4000ADBC3 /* ChallengerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengerTableView.swift; sourceTree = "<group>"; };
+		B7C854FF1EE8CB9E000ADBC3 /* UIView+PKI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PKI.swift"; sourceTree = "<group>"; };
+		B7D748E31EF3118800F43A53 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B7D748E51EF3126700F43A53 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B7D748E71EF312F700F43A53 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		CB783009CA267BC9CE7E84D2 /* Pods-TriviaDuels-ReSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwiftTests/Pods-TriviaDuels-ReSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D52E86A1B145D46EA7113D7F /* Pods-TriviaDuels-ReSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwiftUITests/Pods-TriviaDuels-ReSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1DC8C988234D66D92425550 /* Pods-TriviaDuels-ReSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TriviaDuels-ReSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TriviaDuels-ReSwiftUITests/Pods-TriviaDuels-ReSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF7D44884E687F3EE588662D /* Pods_TriviaDuels_ReSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TriviaDuels_ReSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7C854A31EE8B3D2000ADBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F59744FFD669499ACDE9A4C /* Pods_TriviaDuels_ReSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854B71EE8B3D2000ADBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB595178BC466104C9993018 /* Pods_TriviaDuels_ReSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854C21EE8B3D3000ADBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD1D9134DD7996D68C941B2 /* Pods_TriviaDuels_ReSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6043F82788A2AEF1ED742BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5C3FAAB9F32D21779554C0D /* Pods_TriviaDuels_ReSwift.framework */,
+				2DCAC404EA969A17065C4DF5 /* Pods_TriviaDuels_ReSwiftTests.framework */,
+				EF7D44884E687F3EE588662D /* Pods_TriviaDuels_ReSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B77AAE0D1EEB92FD00C4D804 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				B77AAE0E1EEB930400C4D804 /* NavigationController.swift */,
+				B77AAE101EEB930B00C4D804 /* Routes.swift */,
+				B77AAE121EEB931800C4D804 /* MainViewRoutable.swift */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		B7C8549D1EE8B3D2000ADBC3 = {
+			isa = PBXGroup;
+			children = (
+				B7C854A81EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */,
+				B7C854BD1EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftTests */,
+				B7C854C81EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests */,
+				B7C854A71EE8B3D2000ADBC3 /* Products */,
+				F9C5D0C8F664AA3206E189EC /* Pods */,
+				6043F82788A2AEF1ED742BA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7C854A71EE8B3D2000ADBC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854A61EE8B3D2000ADBC3 /* TriviaDuels-ReSwift.app */,
+				B7C854BA1EE8B3D2000ADBC3 /* TriviaDuels-ReSwiftTests.xctest */,
+				B7C854C51EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7C854A81EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B77AAE0D1EEB92FD00C4D804 /* Routes */,
+				B7C854E01EE8B579000ADBC3 /* Services */,
+				B7C854D71EE8B486000ADBC3 /* Models */,
+				B7C854F81EE8C43A000ADBC3 /* Controllers */,
+				B7C854FB1EE8C8E5000ADBC3 /* Views */,
+				B7C854A91EE8B3D2000ADBC3 /* AppDelegate.swift */,
+				B7C854B01EE8B3D2000ADBC3 /* Assets.xcassets */,
+				B7C854B21EE8B3D2000ADBC3 /* LaunchScreen.storyboard */,
+				B7C854B51EE8B3D2000ADBC3 /* Info.plist */,
+				B7D748E31EF3118800F43A53 /* Action.swift */,
+				B7D748E51EF3126700F43A53 /* AppState.swift */,
+				B7D748E71EF312F700F43A53 /* AppReducer.swift */,
+			);
+			path = "TriviaDuels-ReSwift";
+			sourceTree = "<group>";
+		};
+		B7C854BD1EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854BE1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftTests.swift */,
+				B7C854C01EE8B3D3000ADBC3 /* Info.plist */,
+			);
+			path = "TriviaDuels-ReSwiftTests";
+			sourceTree = "<group>";
+		};
+		B7C854C81EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854C91EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftUITests.swift */,
+				B7C854CB1EE8B3D3000ADBC3 /* Info.plist */,
+			);
+			path = "TriviaDuels-ReSwiftUITests";
+			sourceTree = "<group>";
+		};
+		B7C854D71EE8B486000ADBC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854D81EE8B48D000ADBC3 /* Player.swift */,
+				B7C854DC1EE8B51F000ADBC3 /* Question.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B7C854E01EE8B579000ADBC3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854EB1EE8B5BB000ADBC3 /* Abstract */,
+				B7C854EC1EE8B5CC000ADBC3 /* Trivia Services */,
+				B7C854ED1EE8B5E6000ADBC3 /* TriviaService.swift */,
+				B7C854F61EE8B7FE000ADBC3 /* TriviaServiceError.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B7C854EB1EE8B5BB000ADBC3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854E31EE8B5AA000ADBC3 /* APIResult.swift */,
+				B7C854E51EE8B5AF000ADBC3 /* Requestable.swift */,
+				B7C854E91EE8B5B8000ADBC3 /* RequestStatus.swift */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B7C854EC1EE8B5CC000ADBC3 /* Trivia Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854F11EE8B63A000ADBC3 /* Abstract */,
+				B7C854F21EE8B73E000ADBC3 /* GetChallengersRequest.swift */,
+				B7C854F41EE8B777000ADBC3 /* GetTriviaQuestionsRequest.swift */,
+			);
+			name = "Trivia Services";
+			sourceTree = "<group>";
+		};
+		B7C854F11EE8B63A000ADBC3 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854EF1EE8B60C000ADBC3 /* TriviaRequestable.swift */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		B7C854F81EE8C43A000ADBC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854F91EE8C445000ADBC3 /* HomeController.swift */,
+				B77AAE161EEB961400C4D804 /* TriviaController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B7C854FB1EE8C8E5000ADBC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854FE1EE8CB8E000ADBC3 /* Extensions */,
+				B7C854FC1EE8C8F4000ADBC3 /* ChallengerTableView.swift */,
+				B77AAE181EEDAC7100C4D804 /* TriviaAnswerOptionsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B7C854FE1EE8CB8E000ADBC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7C854FF1EE8CB9E000ADBC3 /* UIView+PKI.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F9C5D0C8F664AA3206E189EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB356E5F8A890237CD3A1F30 /* Pods-TriviaDuels-ReSwift.debug.xcconfig */,
+				20567BADBB98978D70DE7AAE /* Pods-TriviaDuels-ReSwift.release.xcconfig */,
+				CB783009CA267BC9CE7E84D2 /* Pods-TriviaDuels-ReSwiftTests.debug.xcconfig */,
+				1A2824C04F4A84114007CAC7 /* Pods-TriviaDuels-ReSwiftTests.release.xcconfig */,
+				D52E86A1B145D46EA7113D7F /* Pods-TriviaDuels-ReSwiftUITests.debug.xcconfig */,
+				E1DC8C988234D66D92425550 /* Pods-TriviaDuels-ReSwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7C854A51EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C854CE1EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwift" */;
+			buildPhases = (
+				0EB854185879597E63628584 /* [CP] Check Pods Manifest.lock */,
+				B7C854A21EE8B3D2000ADBC3 /* Sources */,
+				B7C854A31EE8B3D2000ADBC3 /* Frameworks */,
+				B7C854A41EE8B3D2000ADBC3 /* Resources */,
+				1355589C0B6010A0D2DEA4FC /* [CP] Embed Pods Frameworks */,
+				C153473CAEE562CFA05C8372 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TriviaDuels-ReSwift";
+			productName = "TriviaDuels-ReSwift";
+			productReference = B7C854A61EE8B3D2000ADBC3 /* TriviaDuels-ReSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7C854B91EE8B3D2000ADBC3 /* TriviaDuels-ReSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C854D11EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwiftTests" */;
+			buildPhases = (
+				C9AEE7E3BF8E2C8CB5802C28 /* [CP] Check Pods Manifest.lock */,
+				B7C854B61EE8B3D2000ADBC3 /* Sources */,
+				B7C854B71EE8B3D2000ADBC3 /* Frameworks */,
+				B7C854B81EE8B3D2000ADBC3 /* Resources */,
+				C0760DD588F48741D4C7B561 /* [CP] Embed Pods Frameworks */,
+				D350590BE48740E2F7F96B90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C854BC1EE8B3D2000ADBC3 /* PBXTargetDependency */,
+			);
+			name = "TriviaDuels-ReSwiftTests";
+			productName = "TriviaDuels-ReSwiftTests";
+			productReference = B7C854BA1EE8B3D2000ADBC3 /* TriviaDuels-ReSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7C854C41EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C854D41EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwiftUITests" */;
+			buildPhases = (
+				91DF2B31427B9A7B87761D5D /* [CP] Check Pods Manifest.lock */,
+				B7C854C11EE8B3D3000ADBC3 /* Sources */,
+				B7C854C21EE8B3D3000ADBC3 /* Frameworks */,
+				B7C854C31EE8B3D3000ADBC3 /* Resources */,
+				8D799E9371712B5DA3302D97 /* [CP] Embed Pods Frameworks */,
+				20C601C8E41CA846099D8AB3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C854C71EE8B3D3000ADBC3 /* PBXTargetDependency */,
+			);
+			name = "TriviaDuels-ReSwiftUITests";
+			productName = "TriviaDuels-ReSwiftUITests";
+			productReference = B7C854C51EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7C8549E1EE8B3D2000ADBC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = PKI;
+				TargetAttributes = {
+					B7C854A51EE8B3D2000ADBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5CSW9GTHFA;
+						ProvisioningStyle = Automatic;
+					};
+					B7C854B91EE8B3D2000ADBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5CSW9GTHFA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7C854A51EE8B3D2000ADBC3;
+					};
+					B7C854C41EE8B3D3000ADBC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5CSW9GTHFA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7C854A51EE8B3D2000ADBC3;
+					};
+				};
+			};
+			buildConfigurationList = B7C854A11EE8B3D2000ADBC3 /* Build configuration list for PBXProject "TriviaDuels-ReSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7C8549D1EE8B3D2000ADBC3;
+			productRefGroup = B7C854A71EE8B3D2000ADBC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7C854A51EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */,
+				B7C854B91EE8B3D2000ADBC3 /* TriviaDuels-ReSwiftTests */,
+				B7C854C41EE8B3D3000ADBC3 /* TriviaDuels-ReSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7C854A41EE8B3D2000ADBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C854B41EE8B3D2000ADBC3 /* LaunchScreen.storyboard in Resources */,
+				B7C854B11EE8B3D2000ADBC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854B81EE8B3D2000ADBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854C31EE8B3D3000ADBC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB854185879597E63628584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1355589C0B6010A0D2DEA4FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwift/Pods-TriviaDuels-ReSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20C601C8E41CA846099D8AB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwiftUITests/Pods-TriviaDuels-ReSwiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D799E9371712B5DA3302D97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwiftUITests/Pods-TriviaDuels-ReSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DF2B31427B9A7B87761D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0760DD588F48741D4C7B561 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwiftTests/Pods-TriviaDuels-ReSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C153473CAEE562CFA05C8372 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwift/Pods-TriviaDuels-ReSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AEE7E3BF8E2C8CB5802C28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D350590BE48740E2F7F96B90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TriviaDuels-ReSwiftTests/Pods-TriviaDuels-ReSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7C854A21EE8B3D2000ADBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C854E61EE8B5AF000ADBC3 /* Requestable.swift in Sources */,
+				B77AAE111EEB930B00C4D804 /* Routes.swift in Sources */,
+				B7C854DD1EE8B51F000ADBC3 /* Question.swift in Sources */,
+				B7C854FA1EE8C445000ADBC3 /* HomeController.swift in Sources */,
+				B77AAE171EEB961400C4D804 /* TriviaController.swift in Sources */,
+				B7C855001EE8CB9E000ADBC3 /* UIView+PKI.swift in Sources */,
+				B7C854FD1EE8C8F4000ADBC3 /* ChallengerTableView.swift in Sources */,
+				B7C854D91EE8B48D000ADBC3 /* Player.swift in Sources */,
+				B7C854AA1EE8B3D2000ADBC3 /* AppDelegate.swift in Sources */,
+				B7D748E61EF3126700F43A53 /* AppState.swift in Sources */,
+				B7C854E41EE8B5AA000ADBC3 /* APIResult.swift in Sources */,
+				B7C854EE1EE8B5E6000ADBC3 /* TriviaService.swift in Sources */,
+				B7D748E81EF312F700F43A53 /* AppReducer.swift in Sources */,
+				B7C854F51EE8B777000ADBC3 /* GetTriviaQuestionsRequest.swift in Sources */,
+				B77AAE191EEDAC7100C4D804 /* TriviaAnswerOptionsView.swift in Sources */,
+				B7D748E41EF3118800F43A53 /* Action.swift in Sources */,
+				B7C854F31EE8B73E000ADBC3 /* GetChallengersRequest.swift in Sources */,
+				B7C854EA1EE8B5B8000ADBC3 /* RequestStatus.swift in Sources */,
+				B77AAE131EEB931800C4D804 /* MainViewRoutable.swift in Sources */,
+				B7C854F71EE8B7FE000ADBC3 /* TriviaServiceError.swift in Sources */,
+				B77AAE0F1EEB930400C4D804 /* NavigationController.swift in Sources */,
+				B7C854F01EE8B60C000ADBC3 /* TriviaRequestable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854B61EE8B3D2000ADBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C854BF1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C854C11EE8B3D3000ADBC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C854CA1EE8B3D3000ADBC3 /* TriviaDuels_ReSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7C854BC1EE8B3D2000ADBC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7C854A51EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */;
+			targetProxy = B7C854BB1EE8B3D2000ADBC3 /* PBXContainerItemProxy */;
+		};
+		B7C854C71EE8B3D3000ADBC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7C854A51EE8B3D2000ADBC3 /* TriviaDuels-ReSwift */;
+			targetProxy = B7C854C61EE8B3D3000ADBC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7C854B21EE8B3D2000ADBC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7C854B31EE8B3D2000ADBC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7C854CC1EE8B3D3000ADBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7C854CD1EE8B3D3000ADBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7C854CF1EE8B3D3000ADBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB356E5F8A890237CD3A1F30 /* Pods-TriviaDuels-ReSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7C854D01EE8B3D3000ADBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20567BADBB98978D70DE7AAE /* Pods-TriviaDuels-ReSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7C854D21EE8B3D3000ADBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB783009CA267BC9CE7E84D2 /* Pods-TriviaDuels-ReSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaDuels-ReSwift.app/TriviaDuels-ReSwift";
+			};
+			name = Debug;
+		};
+		B7C854D31EE8B3D3000ADBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2824C04F4A84114007CAC7 /* Pods-TriviaDuels-ReSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriviaDuels-ReSwift.app/TriviaDuels-ReSwift";
+			};
+			name = Release;
+		};
+		B7C854D51EE8B3D3000ADBC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52E86A1B145D46EA7113D7F /* Pods-TriviaDuels-ReSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TriviaDuels-ReSwift";
+			};
+			name = Debug;
+		};
+		B7C854D61EE8B3D3000ADBC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DC8C988234D66D92425550 /* Pods-TriviaDuels-ReSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CSW9GTHFA;
+				INFOPLIST_FILE = "TriviaDuels-ReSwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PKI.TriviaDuels-ReSwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "TriviaDuels-ReSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7C854A11EE8B3D2000ADBC3 /* Build configuration list for PBXProject "TriviaDuels-ReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854CC1EE8B3D3000ADBC3 /* Debug */,
+				B7C854CD1EE8B3D3000ADBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C854CE1EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854CF1EE8B3D3000ADBC3 /* Debug */,
+				B7C854D01EE8B3D3000ADBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C854D11EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854D21EE8B3D3000ADBC3 /* Debug */,
+				B7C854D31EE8B3D3000ADBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C854D41EE8B3D3000ADBC3 /* Build configuration list for PBXNativeTarget "TriviaDuels-ReSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854D51EE8B3D3000ADBC3 /* Debug */,
+				B7C854D61EE8B3D3000ADBC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7C8549E1EE8B3D2000ADBC3 /* Project object */;
+}
